@@ -1,0 +1,124 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref, amssymb, amsmath, graphicx, subfigure}
+
+\setlength{\oddsidemargin}{.25in}
+\setlength{\evensidemargin}{.25in}
+\setlength{\textwidth}{6in}
+\setlength{\topmargin}{-0.4in}
+\setlength{\textheight}{8.5in}
+
+\setlength{\parindent}{0in}
+\setlength{\parskip}{8pt}
+
+\newcommand{\heading}[6]{
+  \renewcommand{\thepage}{#1-\arabic{page}}
+  \noindent
+  \begin{center}
+  \framebox{
+    \vbox{
+      \hbox to 5.78in { \textbf{#2} \hfill #3 }
+      \vspace{4mm}
+      \hbox to 5.78in { {\Large \hfill #6  \hfill} }
+      \vspace{2mm}
+      \hbox to 5.78in { \textit{Instructor: #4 \hfill #5} }
+    }
+  }
+  \end{center}
+  \vspace*{4mm}
+}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{assumption}[theorem]{Assumption}
+
+\newenvironment{proof}{\noindent{\bf Proof:} \hspace*{1mm}}{
+  \hspace*{\fill} $\Box$ }
+\newenvironment{proof_of}[1]{\noindent {\bf Proof of #1:}
+  \hspace*{1mm}}{\hspace*{\fill} $\Box$ }
+\newenvironment{proof_claim}{\begin{quotation} \noindent}{
+  \hspace*{\fill} $\diamond$ \end{quotation}}
+  
+\newcommand{\lecture}[4]{\heading{#1}{ECE4880J: Computer Vision}{#2}{Siheng Chen}{#4}{#3}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PLEASE MODIFY THESE FIELDS AS APPROPRIATE:
+\newcommand{\lecturenum}{X} % lecture number
+\newcommand{\lecturedate}{May 9, 2022} % date of lecture (e.g., 'March 20, 2010')
+\newcommand{\lecturetitle}{Homework 1: Warm Up} % lecture title
+\newcommand{\scribename}{{\bf YOUR NAME}} % full name of scribe
+% PUT HERE ANY PACKAGES, MACROS, etc., ADDED BY YOU
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyperref}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\lecture{\lecturenum}{\lecturedate}{\lecturetitle}{\scribename}
+
+
+\section*{Instruction}
+
+\begin{itemize}
+    \item This homework is due at 11:59:59 p.m. on ** May 13th, 2022.
+    \item The write-up must be an electronic version edited by LATEX.
+    \item {\bf You will get the full credit once you submit your assignment on time.}
+\end{itemize}
+
+
+\section*{Q1. Let us know about you}
+\begin{itemize}
+    \item What is the most exciting experience at Shanghai Jiao Tong University?
+    
+    \item What is your favorite course at college so far? And why? 
+
+    \item What is the most difficult thing you've encountered in life? How do you handle that situation?
+
+    \item  How would you describe your ability in mathematics?
+
+    \item  How would you describe your ability in programming?
+
+    \item  How would you describe yourself as a team member?
+
+    \item  Have you ever failed your partners in any project? If yes, how are you going to fix this in the future?
+
+    \item  Are you fully prepared to take responsibility in the project of this course?
+
+    \item Anything else you want to talk about yourself?
+\end{itemize}
+
+\section*{Q2. What do you think about computer vision}
+\begin{itemize}
+    \item Why do you choose this computer vision course expect for the course credits?
+    
+    \item What is the coolest computer-vision-related application for you?
+
+    \item Is there any specific computer vision technique you are eager to know? 
+
+    \item Do you have experience in computer vision?
+
+    \item Do you expect doing research on computer vision or working on computer-vision-related jobs in your career? If yes, could you describe your ideal work environment?
+
+    \item Which computer vision topic do you want to learn from this course?
+
+    \item Which track of the course project are you going to choose?
+
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% bibliography goes here
+\bibliographystyle{amsalpha}
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
